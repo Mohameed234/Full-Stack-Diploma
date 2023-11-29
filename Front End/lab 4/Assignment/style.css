@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    
+}
+.header{
+    background: rgb(0, 156, 140);
+    padding: 10px;
+}
+.heading-text{
+    color: white;
+    text-transform: capitalize;
+}
+.box{
+    display: flex;
+    width: 70%;
+    height: 250px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.img{
+    height: 100%;
+}
+.box-heading{
+    display: flex;
+    margin: 10px;
+}
+.box-heading{
+    font-size: 30px;
+}
+.box-paragrah{
+    margin: 40px 10px ;
+    color: rgb(75, 73, 73);
+}
+
+
