@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+}
+
+
+/* Start Header  */
+.header{
+    background-color: aliceblue;
+    height: 80px;
+    padding: 0 30px;
+    
+}
+.header ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    
+}
+ul li{
+    height: 100%px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #008686;
+}
+ul li a:hover{
+    color: #074545;
+}
+
+/* End Header  */
+
+
+
+
+
+/* Start Content  */
+.content{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 900px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-shadow: -7px 1px 12px 0px #7575753b;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.right , .left{
+    width: 50%;
+    height: 700px;
+}
+.color{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    z-index: -1;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.right h4{
+    width: 75%;
+    text-align: center;
+    background-color: #00ffff35;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.left h1{
+    margin-top: 20px;
+    font-size: 40px;
+}
+.left .button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 90%;
+}
+.left .button button{
+    width: 100%;
+    height: 40%;
+    font-size: 20px;
+}
+.google{
+    color: #de1005;
+   border: 3px solid  #de1005;
+   background-color: white;
+   
+}
+.google:hover{
+    background-color: #de1005;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.facebook{
+    color: #3030e3;
+    border: 3px solid #3030e3;
+    background-color: white;
+    
+}
+.facebook:hover{
+    background-color: #3030e3;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.left .table{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+} 
+table{
+    border-spacing: 20px;
+}
+input, select{
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+
+}
+input{
+    padding: 5px;
+}
+.gender{
+  width: 100%;
+}
+.gender input{
+    width: 30%;
+    height: 70%;
+}
+
+.gender label{
+    font-size: 20px;
+    width: 70%;
+    height: 100%;
+}
+.gender label:hover{
+    cursor: pointer;
+}
+.gender td{
+    height: 25px;
+    
+
+}
+
+.policy label{
+    width: 80%;
+   font-size: 15px;
+}
+.policy input{
+    width: 20%;
+    height: 100%;
+}
+td.policy{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+.policy label:hover, .policy input:hover{
+    cursor: pointer;
+}
+
+button.creat-account{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(74, 74, 223);
+    font-size: 20px;
+}
+button.creat-account:hover{
+    cursor: pointer;
+    background-color: #1e1e99;
+}
+.login{
+    text-align: center;
+    font-size: 20px;
+}
+.login a{
+    text-decoration: none;
+    color: #de1005;
+}
+.login a:hover{
+    color: #9a0a02;
+}
+
+/* End Content  */
+
+
+
+/* Start Contact */
+
+
+.contact{
+    width: 100%;
+    height: 300px;
+    background-color: #2a2a7c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact p{
+    width: 200px;
+    color: white;
+    font-size: 15px;
+}
+.contact button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.contact button:hover{
+    background-color: rgb(235, 235, 235);
+}
+.contact button:hover{
+    cursor: pointer;
+}
+.contact div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* End Contact */
+
+
+
+
+/* Start Footer  */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/* End Footer  */
