@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(251, 249, 249);
+}
+
+/* Start Haader */
+
+nav{
+    height: 70px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.art{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.art:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+.art span{
+    display: block;
+    background: #123;
+    width: 100%;
+    height: 18%;
+    margin-bottom: 5px;
+    
+    
+}
+i{
+    color: black;
+}
+
+.img{
+    background-color: white;
+    width: 100px;
+    height: 70px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    
+}
+.youtube{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header ul li a{
+    text-decoration: none;
+}
+input{
+    width: 300px;
+    height: 30px;
+    padding: 8px;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search:hover{
+    cursor: pointer;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 30px;
+    height: 30px;
+    background-color: #e7e7e7;
+}
+.search-bar:hover{
+    background-color: #f0efef;
+}
+.icons{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons a{
+    width: 20px;
+    height: 20px;
+}
+.icons a i{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 600px){
+    .header{
+        /* overflow: hidden; */
+
+    }
+    .youtube .img{
+        width: 70px;
+        height: 60px;
+    }
+    .youtube{
+        width: 30%;
+    }
+    .search {
+        width: 40%;
+    }
+    .search input{
+        width: 100%;
+    }
+    .icons{
+        width: 25%;
+    }
+    .icons i{
+        font-size: 10px;
+    }
+}
+
+/* End Haader */
+
+
+
+
+
+/* Start Side Bar  */
+.side-bar{
+    background-color: rgb(245, 245, 245);
+    width: 35px;
+    padding: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 81vh;
+    position: sticky;
+    top: 91px;
+    
+
+}
+.side-bar:hover{
+    width: 160px;
+}
+.side-bar-heading{
+    display: none;
+}
+ul{
+   list-style: none;
+  
+}
+
+.side-bar li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+}
+.side-bar ul li a:hover, .active{
+    background-color: #dededea1;
+}
+.side-bar li .active:hover{
+    background-color: #9e9e9e69
+}
+
+.side-bar li a i{
+    font-size: 15px;
+}
+.side-bar ul li a p{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 500;
+}
+/* End Side Bar  */
+
+
+
+
+/* Start Content  */
+.content {
+    width: 95vw; 
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    padding: 10px;
+}
+.content-videos{
+    padding: 10px;
+   
+}
+.video{
+    width: 280px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+.content p , h4 ,h1{
+    color: black;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content-videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.video-img{
+    width: 280px;
+    height: 180px;
+    transition: 0.3s;
+}
+.video-img:hover{
+    cursor: pointer;
+    scale: 0.9;
+
+}
+.video-img img{
+    width: 100%;
+    height: 100%;
+}
+.video-title{
+    width: 280px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.video-icon{
+    width: 20%;
+    height: 60%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.video-icon:hover{
+    cursor: pointer;
+}
+.video-icon img{
+    width: 100%;
+    height: 100%;
+}
+.video-text{
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.video-text p{
+    font-size: 12px;
+    height: 45px;
+}
+.video-text h4{
+    font-size: 14px;
+    height: 75px;
+}
+.video-text h4:hover{
+    text-decoration-line: underline ;
+    cursor: pointer;
+}
+
+
+
+/* End Content  */
