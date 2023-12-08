@@ -150,7 +150,7 @@ input{
     padding: 10px;
     overflow: hidden;
     transition: 0.5s;
-    height: 81vh;
+    height: 85vh;
     position: sticky;
     top: 91px;
     
@@ -194,6 +194,33 @@ ul{
     text-transform: capitalize;
     color: black;
     font-weight: 500;
+}
+@media(max-width: 600px){
+    .side-bar ul li a p {
+        font-size: 10px;
+    }
+    .side-bar ul li a i{
+        font-size: 12px;
+    }
+    .side-bar{
+        width: 160px;
+        height: 88vh;
+    }
+    
+}
+@media (max-width:400px) {
+    .side-bar{
+        width: 150px;
+        
+    }
+    .side-bar ul li a p{
+        font-size: 7px;
+
+    }
+    .side-bar ul li a i{
+        font-size: 7px;
+    }
+
 }
 /* End Side Bar  */
 

@@ -3,9 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
+/* body{
     height: 100vh;
-}
+} */
 
 
 /* Start Header  */
@@ -13,6 +13,8 @@ body{
     background-color: aliceblue;
     height: 80px;
     padding: 0 30px;
+    position: sticky;
+    top: 0;
     
 }
 .header ul {
@@ -80,11 +82,12 @@ ul li a:hover{
     padding: 10px;
     border-radius: 5px;
     font-size: 18px;
+    
 }
 .right img{
     width: 100%;
     height: 100%;
-    z-index: -1;
+    background-color: #e0f3ff;
     
 }
 .left{
