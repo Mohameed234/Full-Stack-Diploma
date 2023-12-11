@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.chess{
+    width: 1200px;
+    height: 1200px;
+    background-color:white;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row{
+    height: 200px;
+}
+.black-box{
+    width: 20%;
+    height: 100px;
+    background-color: black;
+}
+.box-2{
+    align-self: flex-end;
+    
+}
+.box-2:hover{
+    
+}
