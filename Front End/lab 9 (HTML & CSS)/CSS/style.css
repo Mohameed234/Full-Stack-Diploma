@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c19f37;
+    border-radius: 50px;
+    height: 5px;
+}
+
+
+/* Start nav  */
+nav{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav img{
+    height: 50px;
+}
+nav .nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links a{
+    padding: 20px;
+    transition: 0.5s;
+}
+.nav-links a:hover , .active{
+    background-color: #c19f37;
+}
+nav .nav-lang p{
+    color: white;
+    font-weight: bold;
+}
+nav .nav-lang .icons img{
+    height: 30px;
+    border-radius: 50%;
+}
+nav .nav-lang .icons img:hover{
+    cursor: pointer;
+}
+nav .icons{
+    text-align: center;
+}
+nav .toggler span{
+    display: none;
+    height: 5px;
+    width: 30px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #c19f37;
+}
+nav .toggler{
+    cursor: pointer;
+}
+
+
+
+@media(max-width:900px){
+    nav .nav-right .nav-links ,nav .nav-right .nav-lang{
+        display: none;
+    }
+    nav .toggler span{
+        display: block;
+    }
+    nav .nav-right:hover .nav-links{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        position: relative;
+        bottom: -135px;
+        right: -30px;
+        width: 200px;
+        position: relative;
+    }
+    nav .nav-right:hover .nav-links a{
+        border-bottom: 1px solid white ;
+    }
+    nav .nav-right:hover .nav-links a:hover{
+        padding-left: 30px;
+    }
+
+
+}
+/* End nav  */
+
+
+
+
+
+
+/* Start Main Section  */
+.main{
+    background-image: url(../img/pexels-photo-8693379.webp);
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.layer{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.097);
+    position: absolute;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55%;
+    height: 400px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: black;
+
+}
+.main-content h1{
+    font-size: 50px;
+    width: 40%;
+    text-align: center;
+}
+.main-content h1 span {
+    color: #c19f37;
+}
+
+.main-content p{
+    font-size: 25px;
+    text-align: center;
+    width: 70%;
+    font-weight: lighter;
+}
+.main-content button{
+    height: 50px;
+    width: 200px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px black;
+    background-color: #b79632;
+    color: white;
+    border: none;
+    box-shadow: 1px 3px 8px 0px black;
+    transition: 0.3s;
+    z-index: 5;
+}
+.main-content button:hover{
+    background-color: #9b802f;
+    cursor: pointer;
+
+}
+@media screen and (max-width:970px) {
+    .main-content h1{
+        font-size: 50px;
+        width: 300px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:648px) {
+    .main-content p{
+        font-size: 25px;
+        text-align: center;
+        width: 300px;
+        font-weight: lighter;
+    }
+}
+@media screen and (max-width:600px) {
+    .main{
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+/* End Main Section  */
+
+
+
+/* Start Practice-area  */
+
+.practice-area{
+    height: calc(100vh - 90px);
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.practice-area-text{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.practice-area-text h1{
+    
+    color: #b79632;
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+.practice-area-text p{
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.practice-area-icons{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.practice-area-icons .box{
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.practice-area-icons .box .text{
+    width: 80%;
+}
+.practice-area-icons .box .text h1{
+    color: #b79632;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Urbanist", sans-serif;
+    margin-bottom: 10px;
+}
+.practice-area-icons .box .text p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Urbanist", sans-serif;
+
+}
+.practice-area-icons .box .icon{
+    width: 60px;
+    height: 60px;
+}
+.practice-area-icons .box .icon img{
+    width: 100%;
+    height: 100%;
+}
+.practice-area-icons .box2 img{
+    height: 12px;
+}
+.practice-area-icons .box2 a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+    color: #b79632;
+    font-size: 18px;
+}
+.practice-area-icons .box2 a:hover{
+    color: white;
+
+}
+
+@media screen and (max-width:1110px) {
+    .practice-area{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding-top: 100px;
+       
+
+    }
+    .practice-area-icons{
+        margin-bottom: 50px;
+        width: 50%;
+    }
+    .practice-area-icons .box2 a{
+        width: 100%;
+    }
+    
+
+}
+/* End Practice-area  */
+
+
+
+
+/* Start Experience Section  */
+.experience{
+    height: 60vh;
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.experience .text{
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    line-height: 60px;
+    width: 35%;
+
+}
+.experience .text h1{
+    font-size: 48px;
+}
+
+.experience .text span{
+    color: #b79632;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+}
+.experience .icon{
+    height: 70%;
+    width: 30%;
+}
+.experience .icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:925px) {
+    .experience{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 60px 0;
+    }
+    .experience .text{
+        width: 50%;
+        text-align: center;
+    }
+    .experience .icon{
+        width: 50%;
+       
+    }
+}
+/* End Experience Section  */
+
+
+
+
+
+
+
+
+
+/* Start Clint Section  */
+.clints{
+    background-color: #181818;
+    height: calc(100vh + 200px);
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.clints .clint-logo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    width: 90%;
+    height: 100%;
+    
+    
+}
+.clints .parent-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.clints h1{
+    color: #b79632;
+    text-align: center;
+    font-size: 55px;
+    font-family: "Kanit", sans-serif;
+}
+.clints .box img{
+    width: 150px;
+}
+.clints .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.clints .box h2{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 28px;
+    color: #b79632;
+}
+
+@media screen and (max-Width:1125px) {
+        .clints{
+            height: auto;
+        }
+        .clint-logo{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .clints .parent-box{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+}
+
+/* End Clint Section  */
+
+
+
+
+
+
+/* Start contact  */
+
+
+.contact-us{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c0c0c;
+}
+
+.contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business{
+    width: 30%;
+}
+.contact-us .jfc-logo img{
+    width: 150px;
+}
+.contact-us .jfc-logo{
+    text-align: center;
+    color: white;
+}
+.contact-us .jfc-logo p{
+    margin-top: 20px;
+}
+.contact-us .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+.contact-us .contact-info h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #b79632;
+}
+
+.contact-us .contact-info .tel , .contact-us .contact-info .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-us .contact-info .location span{
+    width: 60%;
+    text-align: center;
+}
+
+.contact-us .contact-info .tel img, .contact-us .contact-info .location img{
+    width: 25px;
+    height: 25px;
+}
+.contact-us .contact-info .social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.contact-us .contact-info .social .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+}
+.contact-us .contact-info .social .circle .circle-layer{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    
+}
+.contact-us .contact-info .social .circle:hover .circle-layer{
+    animation-name: mohamed;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+    
+.contact-us .contact-info .social .circle:hover{
+    cursor: pointer;
+   
+   
+}
+@keyframes mohamed{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background-color: greenyellow;
+        height: 100%;
+        width: 100%;
+    }
+}
+.contact-us .contact-info .social .circle img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    
+}
+.contact-us .business{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: wheat;
+}
+.contact-us .business .box{
+    width: 217px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-us .business h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #b79632;
+}
+
+.contact-us .business .box h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.contact-us .business .box p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-us .business .box .logo{
+    width: 40px;
+    height: 40px;
+}
+.contact-us .business .box .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-Width: 1175px) {
+
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 788px){
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    
+    }
+    .contact-us .jfc-logo p{
+        width: 150%;
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .contact-us .contact-info{
+        width: 500px;
+    }
+    .contact-us .contact-info .location span , .contact-us .contact-info .tel span{
+        width: 80%;
+    }
+
+    
+    
+}
+/* End contact  */
+
+
+
+
+
+/* Start Footer  */
+footer{
+    border-top: 1px solid white;
+    padding: 20px;
+    background-color: #0c0c0c;
+    color: white;
+    height: 60px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-Width: 788px) {
+    footer{
+        font-size: 5px;
+    }
+}
+
+/* End Footer  */

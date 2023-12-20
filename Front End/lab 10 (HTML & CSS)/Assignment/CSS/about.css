@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c19f37;
+    border-radius: 50px;
+    height: 5px;
+}
+
+
+/* Start nav  */
+nav{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav img{
+    height: 50px;
+}
+nav .nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links a{
+    padding: 20px;
+    transition: 0.5s;
+}
+.nav-links a:hover , .active{
+    background-color: #c19f37;
+}
+nav .nav-lang p{
+    color: white;
+    font-weight: bold;
+}
+nav .nav-lang .icons img{
+    height: 30px;
+    border-radius: 50%;
+}
+nav .nav-lang .icons img:hover{
+    cursor: pointer;
+}
+nav .icons{
+    text-align: center;
+}
+nav .toggler span{
+    display: none;
+    height: 5px;
+    width: 30px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #c19f37;
+}
+nav .toggler{
+    cursor: pointer;
+}
+
+
+
+@media(max-width:900px){
+    nav .nav-right .nav-links ,nav .nav-right .nav-lang{
+        display: none;
+    }
+    nav .toggler span{
+        display: block;
+    }
+    nav .nav-right:hover .nav-links{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        position: relative;
+        bottom: -135px;
+        right: -30px;
+        width: 200px;
+        position: relative;
+    }
+    nav .nav-right:hover .nav-links a{
+        border-bottom: 1px solid white ;
+    }
+    nav .nav-right:hover .nav-links a:hover{
+        padding-left: 30px;
+    }
+
+
+}
+/* End nav  */
+
+
+/* start Main Section  */
+
+.main{
+    height: auto;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 50px 0;
+    gap: 80px;
+}
+.main h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: #b79632;
+}
+.main .btns{
+    display: flex;
+    gap: 30px;
+}
+.main .btns button{
+    height: 50px;
+    background-color: #b79632;
+    border: 2px solid #b79632;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+}
+.main .btns button:hover{
+    background-color: #1b1b1b;
+    border-radius: 0 10px 0 10px;
+}
+.main .pref{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.main .pref .title{
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main .pref .title h2{
+    font-size: 34px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #b79632;
+}
+.main .pref .title p{
+    width: 90%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #9b978c;
+}
+.main .pref .img{
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 8px;  
+}
+.main .pref .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.7s;
+
+}
+.main .pref .img:hover img{
+    scale: 1.2;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    animation-name: img-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+    
+}
+@keyframes img-animation{
+    from{
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+    to{
+        position: relative;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .main{
+        height: auto;
+    }
+    .main .pref{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .main .pref .title {
+        width: 50%;
+    }
+}
+@media screen and (max-width:470px) {
+    .main{
+        height: auto;
+    }
+    .main .btns{
+        width: 90%;
+       
+    }
+    .main .pref .title {
+        width: 80%;
+    }
+}
+/* End Main Section  */
+
+
+
+
+/* Start Vision Section  */
+.vision{
+    background-color: #161515;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.vision h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: #b79632;
+}
+.vision .cards{
+    text-align: center;
+}
+.vision .cards .card{
+    height: 500px;
+    width: 550px;
+    box-shadow: 1px 1px 10px rgba(170, 147, 147, 0.589);
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px ;
+}
+.vision .cards .card .img h2{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 34px;
+    color: #b79632;
+}
+.vision .cards .card p{
+    width: 90%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #9b978c;
+
+}
+.vision .cards{
+    display: flex;
+    gap: 40px;
+}
+.vision .cards .card .img img{
+    height: 100px;
+    width: 100px;
+}
+@media screen and (max-width:1165px) {
+    .vision{
+        height: auto;
+    }
+    .vision .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media screen and (max-width:770px){
+   .vision .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+    .vision .cards .card{
+        height: auto;
+        width: 90%;
+    }
+}
+
+
+/* End Vision Section  */
+
+
+
+
+
+/* Start contact  */
+
+
+.contact-us{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c0c0c;
+}
+
+.contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business{
+    width: 30%;
+}
+.contact-us .jfc-logo img{
+    width: 150px;
+}
+.contact-us .jfc-logo{
+    text-align: center;
+    color: white;
+}
+.contact-us .jfc-logo p{
+    margin-top: 20px;
+}
+.contact-us .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+.contact-us .contact-info h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #b79632;
+}
+
+.contact-us .contact-info .tel , .contact-us .contact-info .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-us .contact-info .location span{
+    width: 60%;
+    text-align: center;
+}
+
+.contact-us .contact-info .tel img, .contact-us .contact-info .location img{
+    width: 25px;
+    height: 25px;
+}
+.contact-us .contact-info .social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.contact-us .contact-info .social .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+}
+.contact-us .contact-info .social .circle .circle-layer{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-facebook{
+    animation-name: facebook;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-insta{
+    animation-name: insta;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-google-map{
+    animation-name: google-map;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+    
+.contact-us .contact-info .social .circle:hover{
+    cursor: pointer;
+   
+   
+}
+@keyframes facebook{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background-color: blue;
+        height: 100%;
+        width: 100%;
+    }
+}
+@keyframes insta{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background: linear-gradient(to bottom right, deeppink, purple);
+        height: 100%;
+        width: 100%;
+    }
+}
+@keyframes google-map{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background: greenyellow;
+        height: 100%;
+        width: 100%;
+    }
+}
+.contact-us .contact-info .social .circle img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    
+}
+.contact-us .business{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.contact-us .business .box{
+    width: 217px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-us .business h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #b79632;
+}
+
+.contact-us .business .box h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.contact-us .business .box p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-us .business .box .logo{
+    width: 40px;
+    height: 40px;
+}
+.contact-us .business .box .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-Width: 1175px) {
+
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 788px){
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    
+    }
+    .contact-us .jfc-logo p{
+        width: 150%;
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .contact-us .contact-info{
+        width: 500px;
+    }
+    .contact-us .contact-info .location span , .contact-us .contact-info .tel span{
+        width: 80%;
+    }
+
+    
+    
+}
+/* End contact  */
+
+
+
+
+
+/* Start Footer  */
+footer{
+    border-top: 1px solid white;
+    padding: 20px;
+    background-color: #0c0c0c;
+    color: white;
+    height: 60px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-Width: 788px) {
+    footer{
+        font-size: 5px;
+    }
+}
+
+/* End Footer  */

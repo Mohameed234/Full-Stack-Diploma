@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #c19f37;
+    border-radius: 50px;
+    height: 5px;
+}
+
+
+/* Start nav  */
+nav{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav img{
+    height: 50px;
+}
+nav .nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links a{
+    padding: 20px;
+    transition: 0.5s;
+}
+.nav-links a:hover , .active{
+    background-color: #c19f37;
+}
+nav .nav-lang p{
+    color: white;
+    font-weight: bold;
+}
+nav .nav-lang .icons img{
+    height: 30px;
+    border-radius: 50%;
+}
+nav .nav-lang .icons img:hover{
+    cursor: pointer;
+}
+nav .icons{
+    text-align: center;
+}
+nav .toggler span{
+    display: none;
+    height: 5px;
+    width: 30px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #c19f37;
+}
+nav .toggler{
+    cursor: pointer;
+}
+
+
+
+@media(max-width:900px){
+    nav .nav-right .nav-links ,nav .nav-right .nav-lang{
+        display: none;
+    }
+    nav .toggler span{
+        display: block;
+    }
+    nav .nav-right:hover .nav-links{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        position: relative;
+        bottom: -135px;
+        right: -30px;
+        width: 200px;
+        position: relative;
+    }
+    nav .nav-right:hover .nav-links a{
+        border-bottom: 1px solid white ;
+    }
+    nav .nav-right:hover .nav-links a:hover{
+        padding-left: 30px;
+    }
+
+
+}
+/* End nav  */
+
+
+
+
+/* Start Main Section  */
+
+.main{
+    height: 60vh;
+    background-color: #ccb671;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.main .text h1 {
+    text-align: center;
+    font-size: 45pt;
+    font-family: "Kanit", sans-serif;
+}
+.main .text p{
+    font-size: 25px;
+    font-family: "Urbanist", sans-serif;
+}
+.main img{
+    width: 500px; 
+}
+@media screen and (max-width:1000px) {
+    .main{
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .main .text{
+        width: 50%;
+    }
+    .main img{
+        width: 500px; 
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .main img{
+        width: 350px;
+    }
+}   
+/* End Main Section  */
+
+
+
+
+
+/* Start Contact Cards Section  */
+
+
+
+.contact-cards{
+    background-color: #181818;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-cards .card{
+    padding: 20px;
+    width: 440px;
+    height: 500px;
+    background-color: #0e0e0e;
+    border: 1px solid #4c4b48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-cards .two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 45px;
+    
+}
+.contact-cards .card img{
+    width: 70px;
+}
+.contact-cards .card h2{
+    color: #b79632;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24pt;
+}
+.contact-cards .card p{
+    text-align: center;
+    font-size: 14pt;
+    color: #9b978c;
+    font-family: "Urbanist", sans-serif;
+}
+.contact-cards .card span{
+    text-align: center;
+    color: #b79632;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20pt;
+    letter-spacing: 1.5px;
+}
+
+
+
+@media screen and (max-width:995px) {
+    .contact-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+    }
+}
+@media screen and (max-width:460px){
+    .contact-cards .card{
+        width: auto;
+    }
+}
+
+/* End Contact Cards Section  */
+
+
+
+
+
+/* Srart Contact Location  */
+.contact-location{
+    padding: 30px;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.contact-location .location{
+    display: flex;
+}
+.contact-location .location .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.contact-location .location iframe{
+    width: 50%;
+}
+.contact-location .location .text h2{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: #b79632;
+    font-size: 25pt;
+}
+.contact-location .location .text p{
+    font-family: "Urbanist", sans-serif;
+    width: 80%;
+    color: #9b978c;
+    font-size: 15pt;
+}
+
+.contact-location h1{
+    color: #b79632;
+    font-size: 30pt;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+}
+@media screen and (max-width:769px) {
+    .contact-location .location{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .contact-location .location .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .contact-location .location .text , .contact-location .location iframe{
+        width: 90%;
+    }
+}
+
+/* End Contact Location  */
+
+
+
+/* Start contact  */
+
+
+.contact-us{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c0c0c;
+}
+
+.contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business{
+    width: 30%;
+}
+.contact-us .jfc-logo img{
+    width: 150px;
+}
+.contact-us .jfc-logo{
+    text-align: center;
+    color: white;
+}
+.contact-us .jfc-logo p{
+    margin-top: 20px;
+}
+.contact-us .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+.contact-us .contact-info h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #b79632;
+}
+
+.contact-us .contact-info .tel , .contact-us .contact-info .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-us .contact-info .location span{
+    width: 60%;
+    text-align: center;
+}
+
+.contact-us .contact-info .tel img, .contact-us .contact-info .location img{
+    width: 25px;
+    height: 25px;
+}
+.contact-us .contact-info .social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.contact-us .contact-info .social .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+}
+.contact-us .contact-info .social .circle .circle-layer{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-facebook{
+    animation-name: facebook;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-insta{
+    animation-name: insta;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-google-map{
+    animation-name: google-map;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+    
+.contact-us .contact-info .social .circle:hover{
+    cursor: pointer;
+   
+   
+}
+@keyframes facebook{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background-color: blue;
+        height: 100%;
+        width: 100%;
+    }
+}
+@keyframes insta{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background: linear-gradient(to bottom right, deeppink, purple);
+        height: 100%;
+        width: 100%;
+    }
+}
+@keyframes google-map{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background: greenyellow;
+        height: 100%;
+        width: 100%;
+    }
+}
+.contact-us .contact-info .social .circle img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    
+}
+.contact-us .business{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.contact-us .business .box{
+    width: 217px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-us .business h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #b79632;
+}
+
+.contact-us .business .box h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.contact-us .business .box p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-us .business .box .logo{
+    width: 40px;
+    height: 40px;
+}
+.contact-us .business .box .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-Width: 1175px) {
+
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 788px){
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    
+    }
+    .contact-us .jfc-logo p{
+        width: 150%;
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .contact-us .contact-info{
+        width: 500px;
+    }
+    .contact-us .contact-info .location span , .contact-us .contact-info .tel span{
+        width: 80%;
+    }
+
+    
+    
+}
+/* End contact  */
+
+
+
+
+
+/* Start Footer  */
+footer{
+    border-top: 1px solid white;
+    padding: 20px;
+    background-color: #0c0c0c;
+    color: white;
+    height: 60px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-Width: 788px) {
+    footer{
+        font-size: 5px;
+    }
+}
+
+/* End Footer  */
