@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900;1000&family=Open+Sans:wght@400;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --main-color: #c19f37;
+    --second-color: #fff;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--second-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 50px;
+    height: 5px;
+}
+.active{
+    background-color: #91741f;
+    border-radius: 10px;
+    color: #ffffffbe;
+}
+
+/* Srart Nav  */
+nav{
+    position: sticky;
+    top: 0;
+    height: 70px;
+    padding: 10px 100px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav .logo img{
+    height: 70px;
+    position: relative;
+    top: 15px;
+}
+nav .box .icon img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+nav .box {
+    position: relative;
+    
+
+}
+nav .box .links {
+  position: absolute;
+  right: -100px;
+  top: 39px;
+  background-color: var(--main-color);
+  min-width: 300px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  height: 663px;
+}
+nav .box:hover .links{
+    display: flex;
+    
+}
+nav .box .links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--second-color);
+    padding: 24px;
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+}
+nav .box .links a:hover{
+    background-color: #91741f;
+    border-radius: 10px;
+    color: #ffffffbe;
+}
+nav .box .links img{
+    width: 35px;
+    height: 35px;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+/* End Nav  */
+
+
+
+
+/* Start Content Section  */
+
+.content{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    
+}
+.content h1{
+    font-size: 60px;
+    font-family: 'Cairo', sans-serif;
+}
+.content .box{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.content .box .box-title{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    line-height: 25px;
+    font-weight: 500;
+
+
+}
+.content .box .box-title h2{
+    font-size: 30px;
+    font-family: 'Cairo', sans-serif;
+}
+.content .box .partner{
+    width: 450px;
+    height: 300px;
+    box-shadow: 5px 5px 10px 5px lightgray;
+
+}
+.content .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+/* End Content Section  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start contact  */
+
+
+.contact-us{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #91741f;
+    color: var(--second-color);
+}
+
+.contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business{
+    width: 30%;
+}
+.contact-us .jfc-logo img{
+    height: 100px;
+}
+.contact-us .jfc-logo{
+    text-align: center;
+    color: white;
+}
+.contact-us .jfc-logo p{
+    margin-top: 20px;
+}
+.contact-us .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+}
+.contact-us .contact-info h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    
+}
+
+.contact-us .contact-info .tel , .contact-us .contact-info .location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact-us .contact-info .location span{
+    width: 60%;
+    text-align: center;
+}
+
+.contact-us .contact-info .tel img, .contact-us .contact-info .location img{
+    width: 25px;
+    height: 25px;
+}
+.contact-us .contact-info .social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.contact-us .contact-info .social .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+}
+.contact-us .contact-info .social .circle .circle-layer{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-facebook{
+    animation-name: facebook;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-insta{
+    animation-name: insta;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.contact-us .contact-info .social .circle:hover .circle-layer-google-map{
+    animation-name: google-map;
+    border-radius: 50%;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+    
+.contact-us .contact-info .social .circle:hover{
+    cursor: pointer;
+   
+   
+}
+@keyframes facebook{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background-color: blue;
+        height: 100%;
+        width: 100%;
+    }
+}
+@keyframes insta{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background: linear-gradient(to bottom right, deeppink, purple);
+        height: 100%;
+        width: 100%;
+    }
+}
+@keyframes google-map{
+    from{
+        background-color: transparent;
+        height: 0;
+        width: 0;
+      
+    }
+
+    to{
+        background: greenyellow;
+        height: 100%;
+        width: 100%;
+    }
+}
+.contact-us .contact-info .social .circle img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    
+}
+.contact-us .business{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.contact-us .business .box{
+    width: 217px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-us .business h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    
+}
+
+.contact-us .business .box h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.contact-us .business .box p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-us .business .box .logo{
+    width: 40px;
+    height: 40px;
+}
+.contact-us .business .box .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-Width: 1175px) {
+
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 788px){
+    .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    
+    }
+    .contact-us .jfc-logo p{
+        width: 150%;
+    }
+    .contact-us .jfc-logo , .contact-us .contact-info , .contact-us .business {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .contact-us .contact-info{
+        width: 500px;
+    }
+    .contact-us .contact-info .location span , .contact-us .contact-info .tel span{
+        width: 80%;
+    }
+
+    
+    
+}
+/* End contact  */
+
+
+
+
+
+/* Start Footer  */
+footer{
+    border-top: 1px solid white;
+    padding: 20px;
+    background-color: #91741f;
+    color: white;
+    height: 60px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-Width: 788px) {
+    footer{
+        font-size: 5px;
+    }
+}
+
+/* End Footer  */
