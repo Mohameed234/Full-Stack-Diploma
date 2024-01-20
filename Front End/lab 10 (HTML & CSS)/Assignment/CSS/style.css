@@ -35,7 +35,7 @@ nav{
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 nav img{
     height: 50px;
@@ -107,6 +107,7 @@ nav .toggler{
 
 
 }
+
 /* End nav  */
 
 
@@ -145,6 +146,7 @@ nav .toggler{
     font-family: "Kanit", sans-serif;
     font-weight: 500;
     color: black;
+    z-index: 1;
 
 }
 .main-content h1{
@@ -203,6 +205,17 @@ nav .toggler{
         justify-content: center;
         align-items: center;
         
+    }
+}
+@media screen and (max-width:281px) {
+    .main-content{
+        width: 100%;
+    }
+    .main-content p {
+        font-size: 18px;
+        text-align: center;
+        width: 90%;
+        font-weight: lighter;
     }
 }
 
@@ -314,8 +327,18 @@ nav .toggler{
     .practice-area-icons .box2 a{
         width: 100%;
     }
-    
-
+  
+}
+@media screen and (max-width:281px) {
+    .practice-area-text {
+        width: 79%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
 }
 /* End Practice-area  */
 
@@ -373,6 +396,12 @@ nav .toggler{
     .experience .icon{
         width: 50%;
        
+    }
+}
+@media screen and (max-width:280px) {
+    .experience .text {
+        width: 85%;
+        text-align: center;
     }
 }
 /* End Experience Section  */
@@ -696,6 +725,19 @@ nav .toggler{
     
     
 }
+@media screen and (max-width:281px) {
+    .contact-us .jfc-logo{
+        width: 500px;
+    }
+    .contact-us .jfc-logo p{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+}
+
+
 /* End contact  */
 
 
